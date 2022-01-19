@@ -89,7 +89,7 @@ async function sewQueen() {
                 console.log(SOL.LOG); console.log(SOL.PASSC);
                 if (Details.SEWRR == 'raviya') {
                         console.log(SOL.PASSD)
-                } else if (Details.SEWRR !== 'raviya') {
+                } else if (Details.SEWRR !== 'dila') {
                         throw new Error(SOL.PASSW); return;
                 }
             console.log(SOL.INSTCL); console.log(SOL.INSTC); console.log(SOL.INSTL);
@@ -117,7 +117,7 @@ async function sewQueen() {
                 if (msg.key && msg.key.remoteJid == 'status@broadcast') return;
                 if (Details.NO_ONLINE) { await DataKey.updatePresence(msg.key.remoteJid, Presence.unavailable)}
                 await sendMessageGreetingMSG(DataKey, getMessage, msg)
-                if (GBLACK.ALL_GROUP !== 'raviya') {     
+                if (GBLACK.ALL_GROUP !== 'dila') {     
                 var grp = GBLACK.ALL_GROUP + ',' + Details.BLOCKCHAT;var sup = grp.split(',')
                 if(msg.key.remoteJid.includes('g.us') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return}
                 await sendMessageMSGMSG(DataKey, msg, 'sew', SQQA)
